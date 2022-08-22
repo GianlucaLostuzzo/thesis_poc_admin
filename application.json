@@ -1,0 +1,44 @@
+{
+  "pages": [
+    {
+      "id": "Approvazioni",
+      "isDefault": true
+    },
+    {
+      "id": "Gestione imprese",
+      "isDefault": false
+    },
+    {
+      "id": "Gestione utenti",
+      "isDefault": false
+    },
+    {
+      "id": "Nuova azienda",
+      "isDefault": false
+    },
+    {
+      "id": "Nuovo Utente",
+      "isDefault": false
+    },
+    {
+      "id": "Nuovo corso",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "62f362dbc0afc81462c1910b",
+  "color": "#C2DAF0",
+  "icon": "book",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}
