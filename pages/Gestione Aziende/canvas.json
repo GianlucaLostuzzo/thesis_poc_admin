@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Gestione imprese",
-    "slug": "gestione-imprese",
+    "name": "Gestione Aziende",
+    "slug": "gestione-aziende",
     "layouts": [
       {
         "viewMode": false,
@@ -155,7 +155,7 @@
                       "boxShadow": "none",
                       "widgetName": "add_btn",
                       "rightColumn": 59,
-                      "onClick": "{{navigateTo('Nuova azienda', {},'SAME_WINDOW')}}",
+                      "onClick": "{{navigateTo('Nuova Azienda', {},'SAME_WINDOW')}}",
                       "iconName": "add",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "widgetId": "nh3cu4lb1g",
@@ -1761,7 +1761,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Gestione imprese_SelectQuery",
+              "id": "Gestione Aziende_SelectQuery",
               "name": "SelectQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1777,7 +1777,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Gestione imprese",
+        "id": "Gestione Aziende",
         "deleted": false,
         "policies": [],
         "userPermissions": []

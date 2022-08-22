@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Gestione utenti",
+    "pageId": "Gestione Aziende",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM public.\"utenti\"\nWHERE \"telefono\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'cf'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM public.\"aziende\"\nWHERE \"ragionesociale\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'piva'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -33,7 +33,7 @@
       "(data_table.pageNo - 1) * data_table.pageSize",
       "data_table.pageSize",
       "data_table.searchText || \"\"",
-      "data_table.sortOrder.column || 'cf'",
+      "data_table.sortOrder.column || 'piva'",
       "data_table.sortOrder.order || 'ASC'"
     ],
     "userSetOnLoad": true,
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Gestione utenti_SelectQuery",
+  "id": "Gestione Aziende_SelectQuery",
   "deleted": false,
-  "gitSyncId": "62fcad8a5960e1776bd8692b_62fcad8b5960e1776bd8694c"
+  "gitSyncId": "62fcad8a5960e1776bd8692b_62fcad8b5960e1776bd8695a"
 }

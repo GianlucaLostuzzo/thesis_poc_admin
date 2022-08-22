@@ -5,15 +5,15 @@
       "isDefault": true
     },
     {
-      "id": "Gestione imprese",
+      "id": "Gestione Aziende",
       "isDefault": false
     },
     {
-      "id": "Gestione utenti",
+      "id": "Gestione Utenti",
       "isDefault": false
     },
     {
-      "id": "Nuova azienda",
+      "id": "Nuova Azienda",
       "isDefault": false
     },
     {
@@ -21,7 +21,7 @@
       "isDefault": false
     },
     {
-      "id": "Nuovo corso",
+      "id": "Nuovo Corso",
       "isDefault": false
     }
   ],

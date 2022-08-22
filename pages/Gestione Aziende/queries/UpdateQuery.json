@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Gestione imprese",
+    "pageId": "Gestione Aziende",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -48,7 +48,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Gestione imprese_UpdateQuery",
+  "id": "Gestione Aziende_UpdateQuery",
   "deleted": false,
   "gitSyncId": "62fcad8a5960e1776bd8692b_62fcad8b5960e1776bd86959"
 }
