@@ -32,7 +32,7 @@
   "color": "#C2DAF0",
   "icon": "book",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "MOBILE"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"
