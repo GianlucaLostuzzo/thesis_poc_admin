@@ -32,10 +32,10 @@
   "color": "#C2DAF0",
   "icon": "book",
   "unpublishedAppLayout": {
-    "type": "MOBILE"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "MOBILE"
   },
   "evaluationVersion": 2,
   "applicationVersion": 2,
