@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Comune",
+    "name": "Provincia",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT Nome\nFROM comuni\nWHERE provincia = (SELECT codice\n\t\t\t\t\t\t\t\t\t FROM province\n\t\t\t\t\t\t\t\t\t WHERE nome = '{{Select2.selectedOptionValue}}');",
+      "body": "SELECT Nome FROM province;",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -26,23 +26,17 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Select2.selectedOptionValue"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Nuovo Utente_Comune",
+  "id": "Nuovo Utente_Provincia",
   "deleted": false,
-  "gitSyncId": "62fcadb45960e1776bd8697b_6304a8582cd0a959a40f4c0f"
+  "gitSyncId": "62fcadb45960e1776bd8697b_6305c8c58401e60ac383fa52"
 }

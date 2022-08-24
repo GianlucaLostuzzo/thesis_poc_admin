@@ -358,7 +358,7 @@
                       "key": "22nx16fap7",
                       "isDeprecated": false,
                       "rightColumn": 46,
-                      "backgroundColor": "#f4f4f5",
+                      "backgroundColor": "transparent",
                       "textAlign": "CENTER",
                       "widgetId": "sbn5em2iup",
                       "isVisible": true,
