@@ -820,7 +820,11 @@
                       "hideCard": false,
                       "defaultOptionValue": "{{\n            {\n              label: Select3.options[0].label,\n              value: Select3.options[0].value\n            }\n          }}",
                       "animateLoading": false,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "dynamicBindingPathList": [
                         {
                           "key": "options"
@@ -853,7 +857,8 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "onOptionChange": "{{CodiceComune.run()}}"
                     }
                   ],
                   "key": "l3mvmzrjqo",

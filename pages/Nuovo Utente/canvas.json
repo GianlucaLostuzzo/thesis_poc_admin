@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1030,
+          "bottomRow": 940,
           "containerStyle": "none",
           "snapRows": 73,
           "parentRowSpace": 1,
@@ -963,8 +963,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 33,
-                      "bottomRow": 37,
+                      "topRow": 28,
+                      "bottomRow": 32,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "SELECT_WIDGET",
@@ -991,7 +991,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "leftColumn": 2,
+                      "leftColumn": 30,
                       "labelPosition": "Auto",
                       "options": "{{Provincia.data.map( (obj) =>{ return  {'label': obj.nome, 'value': obj.nome } })}}",
                       "placeholderText": "Select option",
@@ -1000,7 +1000,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 30,
+                      "rightColumn": 60,
                       "widgetId": "4r7oo6jbc4",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -1075,8 +1075,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 28,
-                      "bottomRow": 32,
+                      "topRow": 33,
+                      "bottomRow": 37,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "SELECT_WIDGET",
@@ -1084,7 +1084,11 @@
                       "hideCard": false,
                       "defaultOptionValue": "{{\n            {\n              label: Select3.options[0].label,\n              value: Select3.options[0].value\n            }\n          }}",
                       "animateLoading": false,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "dynamicBindingPathList": [
                         {
                           "key": "options"
@@ -1099,7 +1103,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "leftColumn": 30,
+                      "leftColumn": 2,
                       "labelPosition": "Auto",
                       "options": "{{Comune.data.map( (obj) =>{ return  {'label': obj.nome, 'value': obj.nome } })}}",
                       "placeholderText": "Select option",
@@ -1108,7 +1112,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 60,
+                      "rightColumn": 30,
                       "widgetId": "hizmzi8hut",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -1117,7 +1121,8 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "onOptionChange": "{{CodiceComune.run()}}"
                     }
                   ],
                   "key": "l3mvmzrjqo",
@@ -1157,8 +1162,8 @@
               "isVisibleDownload": true,
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 84,
-              "bottomRow": 101,
+              "topRow": 75,
+              "bottomRow": 92,
               "columnWidthMap": {
                 "task": 245,
                 "step": 62,
@@ -1218,7 +1223,7 @@
                   "key": "primaryColumns.codice.computedValue"
                 }
               ],
-              "leftColumn": 15,
+              "leftColumn": 14,
               "primaryColumns": {
                 "codice": {
                   "allowCellWrapping": false,
@@ -1251,7 +1256,7 @@
               "defaultSelectedRowIndex": 0,
               "key": "khbfimhvln",
               "isDeprecated": false,
-              "rightColumn": 49,
+              "rightColumn": 48,
               "textSize": "0.875rem",
               "widgetId": "o8dn0nvhys",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
