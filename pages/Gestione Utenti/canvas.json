@@ -100,7 +100,7 @@
                           "key": "fontFamily"
                         }
                       ],
-                      "text": "public_utenti Data",
+                      "text": "Utenti",
                       "labelTextSize": "0.875rem",
                       "rightColumn": 54,
                       "textAlign": "LEFT",
@@ -1605,7 +1605,7 @@
               "bottomRow": 86,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
-              "title": "Update Row idutente: {{data_table.selectedRow.idutente}}",
+              "title": "Aggiorna riga: {{data_table.selectedRow.idutente}}",
               "type": "JSON_FORM_WIDGET",
               "hideCard": false,
               "animateLoading": true,
