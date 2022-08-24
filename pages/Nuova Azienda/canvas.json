@@ -102,7 +102,7 @@
                           "detachFromLayout": true,
                           "widgetId": "0vd6u7cdef",
                           "containerStyle": "none",
-                          "bottomRow": 35.9375,
+                          "bottomRow": 60,
                           "topRow": 0,
                           "parentRowSpace": 1,
                           "isVisible": true,
@@ -126,9 +126,13 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "ButtonAz2",
-                              "onClick": "{{CreaAzienda.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nInvia_conferma.run();\nnavigateTo('Gestione Aziende', {})}}",
+                              "onClick": "{{CreaAzienda.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nInvia_conferma.run();\nCreaSede.run();\nnavigateTo('Gestione Aziende', {})}}",
                               "buttonColor": "#60a5fa",
-                              "dynamicPropertyPathList": [],
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -147,7 +151,7 @@
                                 }
                               ],
                               "parentColumnSpace": 4.632568359375,
-                              "leftColumn": 32.96969696969697,
+                              "leftColumn": 33,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -360,7 +364,7 @@
                       ],
                       "labelPosition": "Auto",
                       "labelStyle": "",
-                      "inputType": "NUMBER",
+                      "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "osj9m21opd",
                       "labelTextSize": "0.875rem",

@@ -432,7 +432,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{CreaUtente.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error')); Invia_conferma_utente.run()}}",
+                              "onClick": "{{CreaUtente.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nCreaResidenza.run();\nInvia_conferma_utente.run()}}",
                               "buttonColor": "#60a5fa",
                               "dynamicPropertyPathList": [
                                 {

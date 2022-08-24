@@ -15,6 +15,14 @@
     {
       "id": "Nuovo Corso",
       "isDefault": false
+    },
+    {
+      "id": "Gestione Aziende",
+      "isDefault": false
+    },
+    {
+      "id": "Gestione Utenti",
+      "isDefault": false
     }
   ],
   "viewMode": false,
