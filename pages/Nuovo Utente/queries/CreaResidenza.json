@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "CreaUtente",
+    "name": "CreaResidenza",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO utenti\n  (nome, cognome, datanascita, cf, mail, telefono, lavoraper)\nVALUES\n  (\n    '{{ Input1.text }}',\n    '{{ Input2.text }}',\n    '{{ DatePicker1.selectedDate }}',\n\t\t'{{Input3.text}}',\n\t\t'{{Input4.text}}',\n\t\t'{{Input5.text}}',\n\t\t'{{Text4.text}}'\n  );",
+      "body": "INSERT INTO residenze\n  (persona, comune, via)\nVALUES\n  (\n\t\t'{{Input3.text}}',\n\t\t'{{Text3.text}}',\n    '{{Input1Copy.text}}'\n  );",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -35,20 +35,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "DatePicker1.selectedDate",
-      "Input1.text",
-      "Input2.text",
+      "Input1Copy.text",
       "Input3.text",
-      "Input4.text",
-      "Input5.text",
-      "Text4.text"
+      "Text3.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Nuovo Utente_CreaUtente",
+  "id": "Nuovo Utente_CreaResidenza",
   "deleted": false,
-  "gitSyncId": "62fcad8a5960e1776bd8692b_62fcad8b5960e1776bd86951"
+  "gitSyncId": "62fcadb45960e1776bd8697b_6305eb9d8401e60ac383faa3"
 }
