@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "CreaResidenza",
+    "name": "Province",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -13,38 +13,30 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Nuovo Utente",
+    "pageId": "Nuova Azienda",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO residenze\n  (persona, comune, via)\nVALUES\n  (\n    '{{Input3.text}}',\n\t\t'{{Table1.selectedRow.codice}}',\n\t\t'{{Input7.text}}'\n  );",
+      "body": "SELECT Nome FROM province;",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ]
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Input3.text",
-      "Input7.text",
-      "Table1.selectedRow.codice"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Nuovo Utente_CreaResidenza",
+  "id": "Nuova Azienda_Province",
   "deleted": false,
-  "gitSyncId": "62fcadb45960e1776bd8697b_6305ccd38401e60ac383fa55"
+  "gitSyncId": "62fcadb45960e1776bd8697b_6305e4138401e60ac383fa84"
 }

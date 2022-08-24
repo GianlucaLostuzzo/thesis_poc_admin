@@ -37,8 +37,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 68,
-              "bottomRow": 72,
+              "topRow": 60,
+              "bottomRow": 64,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -83,7 +83,7 @@
                 "group"
               ],
               "topRow": 1,
-              "bottomRow": 65,
+              "bottomRow": 57,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -105,7 +105,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 640,
+                  "bottomRow": 550,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -177,14 +177,14 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 41,
-                      "bottomRow": 56,
+                      "topRow": 30,
+                      "bottomRow": 45,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 4.862060546875,
-                      "leftColumn": 1,
+                      "leftColumn": 2,
                       "children": [
                         {
                           "rightColumn": 311.171875,
@@ -371,7 +371,7 @@
                       "key": "x44ua3maxf",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 36,
+                      "rightColumn": 37,
                       "widgetId": "7s44b7r9it",
                       "containerStyle": "card",
                       "isVisible": true,
@@ -393,14 +393,14 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 56,
-                      "bottomRow": 62,
+                      "topRow": 47,
+                      "bottomRow": 53,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 4.4921875,
-                      "leftColumn": 29,
+                      "leftColumn": 30,
                       "children": [
                         {
                           "rightColumn": 287.5,
@@ -432,7 +432,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{CreaUtente.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nInvia_conferma_utente.run();\nCreaResidenza.run()\n}}",
+                              "onClick": "{{CreaUtente.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nnavigateTo('Inserisci Residenza', {})\n}}",
                               "buttonColor": "#60a5fa",
                               "dynamicPropertyPathList": [
                                 {
@@ -540,7 +540,7 @@
                       "key": "x44ua3maxf",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 61,
+                      "rightColumn": 62,
                       "widgetId": "f1tsxgzsxm",
                       "containerStyle": "card",
                       "isVisible": true,
@@ -910,219 +910,6 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
                       "defaultText": ""
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Divider1",
-                      "thickness": 2,
-                      "displayName": "Divider",
-                      "iconSVG": "/static/media/icon.cbe8f608ca868e1eb44607e5fbd4a9e5.svg",
-                      "searchTags": [
-                        "line"
-                      ],
-                      "topRow": 37,
-                      "bottomRow": 41,
-                      "parentRowSpace": 10,
-                      "type": "DIVIDER_WIDGET",
-                      "capType": "nc",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 8.078125,
-                      "leftColumn": 2,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "accentColor"
-                        }
-                      ],
-                      "key": "y8pazub1sz",
-                      "dividerColor": "#EBEBEB",
-                      "orientation": "horizontal",
-                      "strokeStyle": "solid",
-                      "isDeprecated": false,
-                      "rightColumn": 61,
-                      "widgetId": "pvktoey8n3",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "capSide": 0,
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "h44jk95tcc",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Select2",
-                      "isFilterable": true,
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "Provincia",
-                      "searchTags": [
-                        "dropdown"
-                      ],
-                      "topRow": 28,
-                      "bottomRow": 32,
-                      "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "defaultOptionValue": "{{\n            {\n              label: Select2.options[0].label,\n              value: Select2.options[0].value\n            }\n          }}",
-                      "animateLoading": true,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onOptionChange"
-                        }
-                      ],
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "options"
-                        },
-                        {
-                          "key": "defaultOptionValue"
-                        },
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "leftColumn": 30,
-                      "labelPosition": "Auto",
-                      "options": "{{Provincia.data.map( (obj) =>{ return  {'label': obj.nome, 'value': obj.nome } })}}",
-                      "placeholderText": "Select option",
-                      "isDisabled": false,
-                      "key": "krog9aza5g",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 60,
-                      "widgetId": "4r7oo6jbc4",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "h44jk95tcc",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{Comune.run()}}"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Input7",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 28,
-                      "bottomRow": 32,
-                      "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 9.109375,
-                      "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 2,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Auto",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "26ow97m6gu",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 30,
-                      "widgetId": "0rdzxqefdp",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Via e N°",
-                      "version": 2,
-                      "parentId": "h44jk95tcc",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": ""
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Select3",
-                      "isFilterable": true,
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "Comune/Città",
-                      "searchTags": [
-                        "dropdown"
-                      ],
-                      "topRow": 33,
-                      "bottomRow": 37,
-                      "parentRowSpace": 10,
-                      "labelWidth": 5,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "defaultOptionValue": "{{\n            {\n              label: Select3.options[0].label,\n              value: Select3.options[0].value\n            }\n          }}",
-                      "animateLoading": false,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onOptionChange"
-                        }
-                      ],
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "options"
-                        },
-                        {
-                          "key": "defaultOptionValue"
-                        },
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "leftColumn": 2,
-                      "labelPosition": "Auto",
-                      "options": "{{Comune.data.map( (obj) =>{ return  {'label': obj.nome, 'value': obj.nome } })}}",
-                      "placeholderText": "Select option",
-                      "isDisabled": false,
-                      "key": "krog9aza5g",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 30,
-                      "widgetId": "hizmzi8hut",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "h44jk95tcc",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{CodiceComune.run()}}"
                     }
                   ],
                   "key": "l3mvmzrjqo",
@@ -1313,43 +1100,11 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Nuovo Utente_CodiceComune",
-              "name": "CodiceComune",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Select3.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "Nuovo Utente_Aziende",
               "name": "Aziende",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Nuovo Utente_Provincia",
-              "name": "Provincia",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Nuovo Utente_Comune",
-              "name": "Comune",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Select2.selectedOptionValue"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "Comune",
+    "name": "CodiceComune",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -13,15 +13,15 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Nuovo Utente",
+    "pageId": "Nuova Azienda",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT Nome\nFROM comuni\nWHERE provincia = (SELECT codice\n\t\t\t\t\t\t\t\t\t FROM province\n\t\t\t\t\t\t\t\t\t WHERE nome = '{{Select2.selectedOptionValue}}');",
+      "body": "SELECT codice FROM comuni\nWHERE nome = '{{Select4.selectedOptionValue}}';",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
@@ -35,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Select2.selectedOptionValue"
+      "Select4.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Nuovo Utente_Comune",
+  "id": "Nuova Azienda_CodiceComune",
   "deleted": false,
-  "gitSyncId": "62fcadb45960e1776bd8697b_6304a8582cd0a959a40f4c0f"
+  "gitSyncId": "62fcadb45960e1776bd8697b_6305e6bd8401e60ac383fa88"
 }
