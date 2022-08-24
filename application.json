@@ -23,6 +23,14 @@
     {
       "id": "Gestione Utenti",
       "isDefault": false
+    },
+    {
+      "id": "Inserisci sede",
+      "isDefault": false
+    },
+    {
+      "id": "Inserisci residenza",
+      "isDefault": false
     }
   ],
   "viewMode": false,
