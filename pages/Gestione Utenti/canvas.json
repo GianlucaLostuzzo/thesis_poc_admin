@@ -155,7 +155,7 @@
                       "boxShadow": "none",
                       "widgetName": "add_btn",
                       "rightColumn": 59,
-                      "onClick": "{{showModal('Insert_Modal')}}",
+                      "onClick": "{{navigateTo('Nuovo Utente', {})}}",
                       "iconName": "add",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "widgetId": "nh3cu4lb1g",
