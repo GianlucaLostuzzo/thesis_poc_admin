@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO sedi\n  (azienda, comune, via)\nVALUES\n  (\n    '{{InputAz2.text}}',\n\t\t'{{Text3.text}}',\n\t\t'{{Input1.text}}'\n  );",
+      "body": "INSERT INTO sedi\n  (azienda, comune, via)\nVALUES\n  (\n    '{{Text4.text}}',\n\t\t'{{Text3.text}}',\n\t\t'{{Input1.text}}'\n  );",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -36,8 +36,8 @@
     "messages": [],
     "jsonPathKeys": [
       "Input1.text",
-      "InputAz2.text",
-      "Text3.text"
+      "Text3.text",
+      "Text4.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

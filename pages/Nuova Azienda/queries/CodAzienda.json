@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "CreaResidenza",
+    "name": "CodAzienda",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -13,19 +13,19 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Nuovo Utente",
+    "pageId": "Nuova Azienda",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO residenze\n  (persona, comune, via)\nVALUES\n  (\n\t\t'{{Text3Copy.text}}',\n\t\t'{{Text3.text}}',\n    '{{Input1Copy.text}}'\n  );",
+      "body": "select idazienda from aziende where piva = '{{InputAz2.text}}';",
       "pluginSpecifiedTemplates": [
         {
           "value": false
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,16 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Input1Copy.text",
-      "Text3.text",
-      "Text3Copy.text"
+      "InputAz2.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Nuovo Utente_CreaResidenza",
+  "id": "Nuova Azienda_CodAzienda",
   "deleted": false,
-  "gitSyncId": "62fcadb45960e1776bd8697b_6305eb9d8401e60ac383faa3"
+  "gitSyncId": "62fcadb45960e1776bd8697b_630735967bc498130593cd70"
 }
