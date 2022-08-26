@@ -126,8 +126,8 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "ButtonAz2",
-                              "onClick": "{{CreaAzienda.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nInvia_conferma.run();\nshowModal('Modal1')\n}}",
-                              "buttonColor": "#60a5fa",
+                              "onClick": "{{CreaAzienda.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nInvia_conferma.run();\nCodAzienda.run();\nshowModal('Modal1')\n}}",
+                              "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
@@ -157,7 +157,7 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Submit",
+                              "text": "Inserisci",
                               "isDisabled": false,
                               "key": "72ctj5dls4",
                               "isDeprecated": false,
@@ -180,7 +180,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "ButtonAz1",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "buttonColor": "#312e81",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -194,11 +194,9 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 4.632568359375,
+                              "dynamicTriggerPathList": [],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
                                 {
                                   "key": "borderRadius"
                                 }
@@ -207,7 +205,7 @@
                               "isDisabled": false,
                               "key": "72ctj5dls4",
                               "isDeprecated": false,
-                              "rightColumn": 31.03030303030303,
+                              "rightColumn": 31,
                               "isDefaultClickDisabled": true,
                               "widgetId": "b60zcsrig4",
                               "isVisible": true,
@@ -679,7 +677,7 @@
               "boxShadow": "none",
               "widgetName": "Button1",
               "onClick": "{{navigateTo('Approvazioni', {})}}",
-              "buttonColor": "#e0e7ff",
+              "buttonColor": "#e4e4e7",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -1130,6 +1128,11 @@
                       "boxShadow": "none",
                       "widgetName": "Select2",
                       "isFilterable": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                       "labelText": "Provincia",
@@ -1184,7 +1187,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{Comune.run()}}"
+                      "onOptionChange": "{{Comune.run();\nCodAzienda.run();\nCodiceComune.run()}}"
                     },
                     {
                       "boxShadow": "none",

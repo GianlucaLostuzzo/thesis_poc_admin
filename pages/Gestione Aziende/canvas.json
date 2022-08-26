@@ -596,7 +596,7 @@
                       "fontFamily": "System Default",
                       "leftColumn": 1,
                       "dynamicBindingPathList": [],
-                      "text": "Delete Row",
+                      "text": "Cancella riga",
                       "labelTextSize": "0.875rem",
                       "rightColumn": 41,
                       "textAlign": "LEFT",
@@ -630,7 +630,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Cancel",
+                      "text": "Annulla",
                       "isDisabled": false,
                       "labelTextSize": "0.875rem",
                       "rightColumn": 46,
@@ -653,7 +653,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "buttonColor": "#DD4B34",
+                      "buttonColor": "#b91c1c",
                       "topRow": 17,
                       "bottomRow": 21,
                       "type": "BUTTON_WIDGET",
@@ -668,7 +668,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Confirm",
+                      "text": "Conferma",
                       "isDisabled": false,
                       "labelTextSize": "0.875rem",
                       "rightColumn": 64,
@@ -695,7 +695,7 @@
                       "fontFamily": "System Default",
                       "leftColumn": 1,
                       "dynamicBindingPathList": [],
-                      "text": "Are you sure you want to delete this item?",
+                      "text": "Sei sicuro di voler cancellare questa riga?",
                       "labelTextSize": "0.875rem",
                       "rightColumn": 63,
                       "textAlign": "LEFT",
@@ -1383,7 +1383,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ragionesociale))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "Test5",
+                      "sourceData": "Lostuzzo s.r.l.",
                       "isCustomField": false,
                       "accessor": "ragionesociale",
                       "identifier": "ragionesociale",
@@ -1405,7 +1405,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.piva))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "12348765909",
+                      "sourceData": "01305430306",
                       "isCustomField": false,
                       "accessor": "piva",
                       "identifier": "piva",
@@ -1427,7 +1427,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.cf))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "12348765909     ",
+                      "sourceData": "01305430306     ",
                       "isCustomField": false,
                       "accessor": "cf",
                       "identifier": "cf",
@@ -1449,7 +1449,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.mail))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Email Input",
-                      "sourceData": "test5@test.it",
+                      "sourceData": "gianluca@lostuzzo.it",
                       "isCustomField": false,
                       "accessor": "mail",
                       "identifier": "mail",
@@ -1471,7 +1471,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.telefono))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "2341567893",
+                      "sourceData": "3313916017",
                       "isCustomField": false,
                       "accessor": "telefono",
                       "identifier": "telefono",
@@ -1493,7 +1493,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.settore))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "Chimica",
+                      "sourceData": "Attività commerciale",
                       "isCustomField": false,
                       "accessor": "settore",
                       "identifier": "settore",
@@ -1515,7 +1515,7 @@
                       "dataType": "boolean",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.personafisica))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Switch",
-                      "sourceData": true,
+                      "sourceData": false,
                       "isCustomField": false,
                       "accessor": "personafisica",
                       "identifier": "personafisica",
@@ -1535,13 +1535,13 @@
                   "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                   "fieldType": "Object",
                   "sourceData": {
-                    "ragionesociale": "Test5",
-                    "piva": "12348765909",
-                    "cf": "12348765909     ",
-                    "mail": "test5@test.it",
-                    "telefono": "2341567893",
-                    "settore": "Chimica",
-                    "personafisica": true
+                    "ragionesociale": "Lostuzzo s.r.l.",
+                    "piva": "01305430306",
+                    "cf": "01305430306     ",
+                    "mail": "gianluca@lostuzzo.it",
+                    "telefono": "3313916017",
+                    "settore": "Attività commerciale",
+                    "personafisica": false
                   },
                   "isCustomField": false,
                   "accessor": "__root_schema__",
@@ -1564,7 +1564,7 @@
               "submitButtonStyles": {
                 "boxShadow": "none",
                 "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                "buttonColor": "#312e81",
                 "buttonVariant": "PRIMARY"
               },
               "borderColor": "#fff",
@@ -1629,9 +1629,6 @@
                   "key": "title"
                 },
                 {
-                  "key": "resetButtonStyles.buttonColor"
-                },
-                {
                   "key": "resetButtonStyles.borderRadius"
                 },
                 {
@@ -1642,9 +1639,6 @@
                 },
                 {
                   "key": "submitButtonStyles.borderRadius"
-                },
-                {
-                  "key": "submitButtonStyles.buttonColor"
                 },
                 {
                   "key": "schema.__root_schema__.children.ragionesociale.defaultValue"
@@ -1720,7 +1714,7 @@
               "resetButtonStyles": {
                 "boxShadow": "none",
                 "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                "buttonColor": "#312e81",
                 "buttonVariant": "SECONDARY"
               },
               "isVisible": "{{!!data_table.selectedRow.idazienda}}",
@@ -1730,7 +1724,7 @@
               "isLoading": false,
               "scrollContents": true,
               "fixedFooter": true,
-              "submitButtonLabel": "Update",
+              "submitButtonLabel": "Aggiorna",
               "childStylesheet": {
                 "CHECKBOX": {
                   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
