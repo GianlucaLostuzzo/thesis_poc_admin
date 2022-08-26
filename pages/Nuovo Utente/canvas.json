@@ -1077,8 +1077,8 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{CreaUtente.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nshowModal('Modal1')\n}}",
-                              "buttonColor": "#60a5fa",
+                              "onClick": "{{CreaUtente.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nQuery1.run();\nshowModal('Modal1')\n}}",
+                              "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
@@ -1108,7 +1108,7 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "text": "Submit",
+                              "text": "Inserisci",
                               "isDisabled": false,
                               "key": "72ctj5dls4",
                               "isDeprecated": false,
