@@ -121,7 +121,7 @@
                       "rightColumn": 64,
                       "onClick": "{{SelectQuery.run()}}",
                       "iconName": "refresh",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "buttonColor": "#312e81",
                       "widgetId": "xp5u9a9nzq",
                       "topRow": 1,
                       "bottomRow": 5,
@@ -141,13 +141,10 @@
                       "leftColumn": 60,
                       "dynamicBindingPathList": [
                         {
-                          "key": "buttonColor"
-                        },
-                        {
                           "key": "borderRadius"
                         }
                       ],
-                      "buttonVariant": "PRIMARY",
+                      "buttonVariant": "SECONDARY",
                       "isDisabled": false
                     },
                     {
@@ -157,7 +154,7 @@
                       "rightColumn": 59,
                       "onClick": "{{navigateTo('Nuovo Utente', {})}}",
                       "iconName": "add",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "buttonColor": "#312e81",
                       "widgetId": "nh3cu4lb1g",
                       "topRow": 1,
                       "bottomRow": 5,
@@ -176,9 +173,6 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "leftColumn": 55,
                       "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
                         {
                           "key": "borderRadius"
                         }
