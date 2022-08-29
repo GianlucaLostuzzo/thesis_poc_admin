@@ -1132,7 +1132,7 @@
                               "boxShadow": "none",
                               "widgetName": "Button2",
                               "onClick": "{{resetWidget(\"Form1\",true)}}",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "buttonColor": "#312e81",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -1153,9 +1153,6 @@
                               "parentColumnSpace": 4.4921875,
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
                                 {
                                   "key": "borderRadius"
                                 }

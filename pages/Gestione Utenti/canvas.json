@@ -1571,7 +1571,7 @@
               "submitButtonStyles": {
                 "boxShadow": "none",
                 "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                "buttonColor": "#312e81",
                 "buttonVariant": "PRIMARY"
               },
               "borderColor": "#fff",
@@ -1636,9 +1636,6 @@
                   "key": "title"
                 },
                 {
-                  "key": "resetButtonStyles.buttonColor"
-                },
-                {
                   "key": "resetButtonStyles.borderRadius"
                 },
                 {
@@ -1649,9 +1646,6 @@
                 },
                 {
                   "key": "submitButtonStyles.borderRadius"
-                },
-                {
-                  "key": "submitButtonStyles.buttonColor"
                 },
                 {
                   "key": "schema.__root_schema__.children.nome.defaultValue"
@@ -1730,7 +1724,7 @@
               "resetButtonStyles": {
                 "boxShadow": "none",
                 "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                "buttonColor": "#312e81",
                 "buttonVariant": "SECONDARY"
               },
               "isVisible": "{{!!data_table.selectedRow.idutente}}",
@@ -1740,7 +1734,7 @@
               "isLoading": false,
               "scrollContents": true,
               "fixedFooter": true,
-              "submitButtonLabel": "Update",
+              "submitButtonLabel": "Aggiorna",
               "childStylesheet": {
                 "CHECKBOX": {
                   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
