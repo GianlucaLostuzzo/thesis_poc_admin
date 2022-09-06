@@ -1090,7 +1090,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{CreaUtente.run(() => showAlert('Inserito con successo!','success'), () => showAlert('Errore!','error'));\nQuery1.run();\nshowModal('Modal1')\n}}",
+                              "onClick": "{{CreaUtente.run(() => showModal('Modal1'), () => showAlert('Controllare che tutti i campi siano debitamente compilati!','error'));\nQuery1.run();\n}}",
                               "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
