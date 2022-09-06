@@ -126,8 +126,13 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{Insert.run(() => showAlert('Inserito con successo!'), () => {})}}",
+                              "onClick": "{{Insert.run(() => showAlert('Corso inserito con successo!','success'), () => showAlert('Controllare che i campi siano debitamente compilati','warning'))}}",
                               "buttonColor": "#312e81",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -847,6 +852,54 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Button3",
+              "onClick": "{{navigateTo('Gestione Corsi', {})}}",
+              "buttonColor": "#e4e4e7",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 54,
+              "bottomRow": 58,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 24,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Torna indietro",
+              "isDisabled": false,
+              "key": "uz4efw7bov",
+              "isDeprecated": false,
+              "rightColumn": 40,
+              "isDefaultClickDisabled": true,
+              "widgetId": "e8cw92o142",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
             }
           ]
         },
