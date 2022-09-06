@@ -320,9 +320,9 @@
                           "buttonStyle": "rgb(3, 179, 101)",
                           "index": 5,
                           "isVisible": true,
-                          "label": "Delete",
+                          "label": "Elimina",
                           "labelColor": "#FFFFFF",
-                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Cancella'))}}",
                           "columnType": "button",
                           "borderRadius": "{{data_table.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                           "menuColor": "#03B365",
@@ -498,9 +498,9 @@
                           "buttonStyle": "rgb(3, 179, 101)",
                           "index": 5,
                           "isVisible": true,
-                          "label": "Delete",
+                          "label": "Elimina",
                           "labelColor": "#FFFFFF",
-                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Cancella'))}}",
                           "columnType": "button",
                           "borderRadius": "0px",
                           "menuColor": "#03B365",
@@ -641,7 +641,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Delete_Button",
-                      "onClick": "{{DeleteQuery.run(() => SelectQuery.run(() => closeModal('Delete_Modal')), () => {})}}",
+                      "onClick": "{{DeleteSede.run();\nDeleteQuery.run(() => SelectQuery.run(() => closeModal('Delete_Modal')), () => {})}}",
                       "dynamicPropertyPathList": [
                         {
                           "key": "onClick"

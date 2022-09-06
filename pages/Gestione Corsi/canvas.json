@@ -324,7 +324,7 @@
                       ],
                       "primaryColumns": {
                         "customColumn1": {
-                          "isCellVisible": true,
+                          "isCellVisible": false,
                           "boxShadow": "none",
                           "isDerived": true,
                           "computedValue": "",
@@ -559,7 +559,7 @@
                       "key": "zba5qel0au",
                       "derivedColumns": {
                         "customColumn1": {
-                          "isCellVisible": true,
+                          "isCellVisible": false,
                           "boxShadow": "none",
                           "isDerived": true,
                           "computedValue": "",
@@ -660,7 +660,7 @@
                       "fontFamily": "System Default",
                       "leftColumn": 1,
                       "dynamicBindingPathList": [],
-                      "text": "Delete Row",
+                      "text": "Cancella riga",
                       "labelTextSize": "0.875rem",
                       "rightColumn": 41,
                       "textAlign": "LEFT",
@@ -679,7 +679,7 @@
                       "widgetName": "Button1",
                       "onClick": "{{closeModal('Delete_Modal')}}",
                       "dynamicPropertyPathList": [],
-                      "buttonColor": "#2E3D49",
+                      "buttonColor": "#312e81",
                       "topRow": 17,
                       "bottomRow": 21,
                       "type": "BUTTON_WIDGET",
@@ -694,7 +694,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Cancel",
+                      "text": "Annulla",
                       "isDisabled": false,
                       "labelTextSize": "0.875rem",
                       "rightColumn": 46,
@@ -706,7 +706,7 @@
                       "parentId": "zi8fjakv8o",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "TERTIARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "boxShadow": "none",
@@ -732,7 +732,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Confirm",
+                      "text": "Conferma",
                       "isDisabled": false,
                       "labelTextSize": "0.875rem",
                       "rightColumn": 64,
@@ -759,7 +759,7 @@
                       "fontFamily": "System Default",
                       "leftColumn": 1,
                       "dynamicBindingPathList": [],
-                      "text": "Are you sure you want to delete this item?",
+                      "text": "Sei sicuro di voler cancellare questa riga?",
                       "labelTextSize": "0.875rem",
                       "rightColumn": 63,
                       "textAlign": "LEFT",
