@@ -23,6 +23,10 @@
     {
       "id": "Gestione Utenti",
       "isDefault": false
+    },
+    {
+      "id": "Gestione Corsi",
+      "isDefault": false
     }
   ],
   "viewMode": false,
