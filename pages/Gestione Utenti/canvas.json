@@ -320,9 +320,9 @@
                           "buttonStyle": "rgb(3, 179, 101)",
                           "index": 5,
                           "isVisible": true,
-                          "label": "Delete",
+                          "label": "Elimina",
                           "labelColor": "#FFFFFF",
-                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Cancella'))}}",
                           "columnType": "button",
                           "borderRadius": "{{data_table.sanitizedTableData.map((currentRow) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                           "menuColor": "#03B365",
@@ -498,9 +498,9 @@
                           "buttonStyle": "rgb(3, 179, 101)",
                           "index": 5,
                           "isVisible": true,
-                          "label": "Delete",
+                          "label": "Elimina",
                           "labelColor": "#FFFFFF",
-                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+                          "buttonLabel": "{{data_table.sanitizedTableData.map((currentRow) => ( 'Cancella'))}}",
                           "columnType": "button",
                           "borderRadius": "0px",
                           "menuColor": "#03B365",
@@ -590,7 +590,7 @@
                       "fontFamily": "System Default",
                       "leftColumn": 1,
                       "dynamicBindingPathList": [],
-                      "text": "Delete Row",
+                      "text": "Cancella riga",
                       "labelTextSize": "0.875rem",
                       "rightColumn": 41,
                       "textAlign": "LEFT",
@@ -609,7 +609,7 @@
                       "widgetName": "Button1",
                       "onClick": "{{closeModal('Delete_Modal')}}",
                       "dynamicPropertyPathList": [],
-                      "buttonColor": "#2E3D49",
+                      "buttonColor": "#312e81",
                       "topRow": 17,
                       "bottomRow": 21,
                       "type": "BUTTON_WIDGET",
@@ -624,7 +624,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Cancel",
+                      "text": "Annulla",
                       "isDisabled": false,
                       "labelTextSize": "0.875rem",
                       "rightColumn": 46,
@@ -636,7 +636,7 @@
                       "parentId": "zi8fjakv8o",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "TERTIARY"
+                      "buttonVariant": "SECONDARY"
                     },
                     {
                       "boxShadow": "none",
@@ -662,7 +662,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Confirm",
+                      "text": "Conferma",
                       "isDisabled": false,
                       "labelTextSize": "0.875rem",
                       "rightColumn": 64,
@@ -689,7 +689,7 @@
                       "fontFamily": "System Default",
                       "leftColumn": 1,
                       "dynamicBindingPathList": [],
-                      "text": "Are you sure you want to delete this item?",
+                      "text": "Sei sicuro di voler eliminare questa riga?",
                       "labelTextSize": "0.875rem",
                       "rightColumn": 63,
                       "textAlign": "LEFT",

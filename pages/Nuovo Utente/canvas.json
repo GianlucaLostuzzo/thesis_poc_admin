@@ -235,7 +235,7 @@
                               "boxShadow": "none",
                               "widgetName": "Button3",
                               "onClick": "{{CreaResidenza.run(() => navigateTo('Gestione Utenti', {}), () => {});\nInvia_conferma_utente.run()}}",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
@@ -261,9 +261,6 @@
                               ],
                               "leftColumn": 32,
                               "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
                                 {
                                   "key": "borderRadius"
                                 }
@@ -292,7 +289,7 @@
                               "boxShadow": "none",
                               "widgetName": "Button2Copy",
                               "onClick": "{{closeModal('Modal1')}}",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "buttonColor": "#312e81",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -309,9 +306,6 @@
                               "dynamicTriggerPathList": [],
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
                                 {
                                   "key": "borderRadius"
                                 }
@@ -633,7 +627,7 @@
               "boxShadow": "none",
               "widgetName": "Button1Copy",
               "onClick": "{{navigateTo('Approvazioni', {})}}",
-              "buttonColor": "#e0e7ff",
+              "buttonColor": "#e4e4e7",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
