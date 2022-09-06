@@ -234,7 +234,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button3",
-                              "onClick": "{{CreaResidenza.run(() => navigateTo('Gestione Utenti', {}), () => {});\nInvia_conferma_utente.run()}}",
+                              "onClick": "{{CodiceComune.run();\nQuery1.run();\nCreaResidenza.run(() => navigateTo('Gestione Utenti', {}), () => {});\nInvia_conferma_utente.run()}}",
                               "buttonColor": "#312e81",
                               "dynamicPropertyPathList": [
                                 {
