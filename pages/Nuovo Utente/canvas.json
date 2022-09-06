@@ -1341,6 +1341,7 @@
                       "widgetName": "DatePicker1",
                       "minDate": "1920-12-31T18:30:00.000Z",
                       "dateFormat": "DD/MM/YYYY",
+                      "dynamicPropertyPathList": [],
                       "displayName": "DatePicker",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                       "searchTags": [

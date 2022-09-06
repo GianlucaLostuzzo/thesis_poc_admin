@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO residenze\n  (persona, comune, via)\nVALUES\n  (\n\t\t'{{Text3Copy.text}}',\n\t\t'{{Text3.text}}',\n    '{{Input1Copy.text}}'\n  );",
+      "body": "INSERT INTO residenze\n  (persona, comune, via)\nVALUES\n  (\n\t\t'{{Query1.data[0].idutente}}',\n\t\t'{{CodiceComune.data[0].codice}}',\n    '{{Input1Copy.text}}'\n  );",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -35,9 +35,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "CodiceComune.data[0].codice",
       "Input1Copy.text",
-      "Text3.text",
-      "Text3Copy.text"
+      "Query1.data[0].idutente"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
