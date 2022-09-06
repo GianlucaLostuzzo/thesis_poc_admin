@@ -676,7 +676,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1",
-              "onClick": "{{navigateTo('Approvazioni', {})}}",
+              "onClick": "{{navigateTo('Gestione Aziende', {})}}",
               "buttonColor": "#e4e4e7",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
