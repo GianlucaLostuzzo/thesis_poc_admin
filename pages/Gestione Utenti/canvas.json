@@ -641,7 +641,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Delete_Button",
-                      "onClick": "{{DeleteQuery.run(() => SelectQuery.run(() => closeModal('Delete_Modal')), () => {})}}",
+                      "onClick": "{{DeleteResidence.run();\nDeleteUser.run(() => SelectQuery.run(() => closeModal('Delete_Modal')), () => {})}}",
                       "dynamicPropertyPathList": [
                         {
                           "key": "onClick"

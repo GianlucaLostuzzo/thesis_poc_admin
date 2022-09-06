@@ -127,6 +127,11 @@
                       "boxShadow": "none",
                       "widgetName": "Select4",
                       "isFilterable": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
                       "labelText": "Città",
@@ -180,7 +185,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{CodiceComune.run()}}"
+                      "onOptionChange": "{{CodiceComune.run();\nQuery1.run()}}"
                     },
                     {
                       "tabId": "",
@@ -492,7 +497,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{Comune.run();\nCodiceComune.run()}}"
+                      "onOptionChange": "{{Comune.run();\nCodiceComune.run();\nQuery1.run()}}"
                     },
                     {
                       "boxShadow": "none",

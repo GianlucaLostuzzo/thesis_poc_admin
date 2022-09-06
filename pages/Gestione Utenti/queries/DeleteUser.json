@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "CreaResidenza",
+    "name": "DeleteUser",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Nuovo Utente",
+    "pageId": "Gestione Utenti",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO residenze\n  (persona, comune, via)\nVALUES\n  (\n\t\t'{{Query1.data[0].idutente}}',\n\t\t'{{Text3.text}}',\n    '{{Input1Copy.text}}'\n  );",
+      "body": "DELETE FROM public.\"utenti\"\n\tWHERE \"idutente\" = '{{data_table.triggeredRow.idutente}}';",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -35,16 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Input1Copy.text",
-      "Query1.data[0].idutente",
-      "Text3.text"
+      "data_table.triggeredRow.idutente"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Nuovo Utente_CreaResidenza",
+  "id": "Gestione Utenti_DeleteUser",
   "deleted": false,
-  "gitSyncId": "62fcadb45960e1776bd8697b_6305eb9d8401e60ac383faa3"
+  "gitSyncId": "62fcadb45960e1776bd8697b_6316f41e16bd9f543f594a6f"
 }

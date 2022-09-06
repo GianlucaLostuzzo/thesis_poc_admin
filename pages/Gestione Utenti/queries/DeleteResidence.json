@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "DeleteQuery",
+    "name": "DeleteResidence",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -18,14 +18,19 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM public.\"utenti\"\n  WHERE \"idutente\" = {{data_table.triggeredRow.idutente}};",
+      "body": "DELETE FROM public.\"residenze\"\n  WHERE \"persona\" = '{{data_table.triggeredRow.idutente}}';",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
     "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -37,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Gestione Utenti_DeleteQuery",
+  "id": "Gestione Utenti_DeleteResidence",
   "deleted": false,
   "gitSyncId": "62fcadb45960e1776bd8697b_6305d8da8401e60ac383fa73"
 }
