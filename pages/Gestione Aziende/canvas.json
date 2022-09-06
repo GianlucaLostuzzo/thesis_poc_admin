@@ -183,7 +183,7 @@
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "onSort": "{{SelectQuery.run()}}",
-                      "isVisibleDownload": true,
+                      "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd.svg",
                       "topRow": 5,
                       "isSortable": true,

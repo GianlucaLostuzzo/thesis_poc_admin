@@ -130,8 +130,13 @@
                               "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata','success'), () => {})}}",
+                              "onClick": "{{ApprovaRichiesta.run(() => showAlert('Richiesta approvata','success'), () => showAlert('Errore!'))}}",
                               "buttonColor": "#312e81",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
