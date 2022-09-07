@@ -320,6 +320,9 @@
                         },
                         {
                           "key": "onSort"
+                        },
+                        {
+                          "key": "onRowSelected"
                         }
                       ],
                       "primaryColumns": {
@@ -557,6 +560,7 @@
                           "cellBackground": ""
                         }
                       },
+                      "onRowSelected": "{{Mail_iscritti.run()}}",
                       "key": "zba5qel0au",
                       "derivedColumns": {
                         "customColumn1": {
