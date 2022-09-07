@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "DeleteQuery",
+    "name": "Mail_iscritti",
     "datasource": {
       "name": "CorsiFormazione",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE Corsi\nSET Stato = 'Annullato'\nWHERE idcorso = {{ data_table.selectedRow.idcorso }};",
+      "body": "SELECT mail\nFROM utenti\n\tJOIN iscrizioni on idutente = persona\nWHERE corso = {{data_table.selectedRow.idcorso}};",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -42,7 +42,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Gestione Corsi_DeleteQuery",
+  "id": "Gestione Corsi_Mail_iscritti",
   "deleted": false,
-  "gitSyncId": "62fcadb45960e1776bd8697b_6316e91516bd9f543f594a54"
+  "gitSyncId": "62fcadb45960e1776bd8697b_631850e3e2a8275bfc372930"
 }
