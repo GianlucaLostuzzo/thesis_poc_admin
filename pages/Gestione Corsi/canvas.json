@@ -700,7 +700,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Delete_Button",
-                              "onClick": "{{DeleteQuery.run(() => SelectQuery.run(() => closeModal('Delete_Modal')), () => {})}}",
+                              "onClick": "{{DeleteQuery.run(() => showAlert('Corso annullato con successo','warning'), () => showAlert('Si è verificato un errore, contattare l amministratore','error'));\nAnnullamentoCorsi.run();\nSelectQuery.run();\ncloseModal('Delete_Modal')}}",
                               "dynamicPropertyPathList": [
                                 {
                                   "key": "onClick"
