@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE Iscrizioni\n  SET Stato = 'Declinata'\n  WHERE (Corso,Persona) = (SELECT Corsi.idCorso, Utenti.idUtente\n\t\t\t\t\t\t\t\t\t\t\t\t\tFROM Iscrizioni\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tJOIN Corsi on Iscrizioni.Corso = Corsi.idCorso\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tJOIN Utenti on Iscrizioni.Persona = Utenti.idUtente\n\t\t\t\t\t\t\t\t\t\t\t\t\tWHERE Corsi.Nome = '{{ Table1.selectedRow.corso }}'\n\t\t\t\t\t\t\t\t\t\t\t\t and Utenti.Nome = '{{ Table1.selectedRow.nome }}'\n\t\t\t\t\t\t\t\t\t\t\t\t and Utenti.Cognome = '{{Table1.selectedRow.cognome}}');\n",
+      "body": "UPDATE Iscrizioni\n  SET Stato = 'Declinata'\n  WHERE Corso = {{Table1.selectedRow.idcorso}} and persona = {{Table1.selectedRow.persona}};\n",
       "pluginSpecifiedTemplates": [
         {
           "value": false
@@ -35,9 +35,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Table1.selectedRow.cognome",
-      "Table1.selectedRow.corso",
-      "Table1.selectedRow.nome"
+      "Table1.selectedRow.idcorso",
+      "Table1.selectedRow.persona"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

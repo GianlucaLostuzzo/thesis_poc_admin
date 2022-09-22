@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 910,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -307,6 +307,12 @@
                         },
                         {
                           "key": "primaryColumns.stato.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.persona.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.idcorso.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -353,7 +359,9 @@
                         "corso",
                         "nome",
                         "cognome",
-                        "stato"
+                        "stato",
+                        "persona",
+                        "idcorso"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -362,9 +370,9 @@
                         "task": 245,
                         "step": 62,
                         "status": 75,
-                        "nome": 120,
-                        "corso": 232,
-                        "cognome": 150,
+                        "nome": 191,
+                        "corso": 157,
+                        "cognome": 205,
                         "stato": 124,
                         "customColumn1": 96
                       },
@@ -474,6 +482,58 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"stato\"]))}}",
+                          "cellBackground": ""
+                        },
+                        "persona": {
+                          "allowCellWrapping": false,
+                          "index": 4,
+                          "width": 150,
+                          "originalId": "persona",
+                          "id": "persona",
+                          "alias": "persona",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "persona",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"persona\"]))}}",
+                          "cellBackground": ""
+                        },
+                        "idcorso": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "idcorso",
+                          "id": "idcorso",
+                          "alias": "idcorso",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "idcorso",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"idcorso\"]))}}",
                           "cellBackground": ""
                         }
                       },
